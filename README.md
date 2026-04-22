@@ -45,12 +45,14 @@ This project analyzes aircraft lifecycle patterns using survival analysis and ma
 
 ## Project Structure
 
+```
 Plane-Research/
-├── figures/ # Visualization outputs
-├── Plane.ipynb # Main analysis notebook
-├── aircraft_data.csv # Dataset
-├── Plane Research Report.pdf # Full report
+├── figures/                      # Visualization outputs
+├── Plane.ipynb                  # Main analysis notebook
+├── aircraft_data.csv            # Dataset
+├── Plane Research Report.pdf    # Full report
 └── README.md
+```
 
 
 ## Author
