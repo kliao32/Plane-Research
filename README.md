@@ -4,7 +4,7 @@
 This project analyzes how long aircraft remain active using survival analysis.
 
 ## Data
-Data is not included due to size. It can be obtained from public aircraft datasets.
+aircraft_data.csv
 
 ## Methods
 - Kaplan-Meier survival curves
