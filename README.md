@@ -1,45 +1,57 @@
 # Aircraft Survival Analysis
 
 ## Overview
-This project analyzes how long aircraft remain active using survival analysis.
+This project analyzes aircraft lifecycle patterns using survival analysis and machine learning to understand retirement behavior.
 
 ## Data
-aircraft_data.csv
+- aircraft_data.csv (cleaned aircraft lifecycle dataset)
 
 ## Methods
-- Kaplan-Meier survival curves
-- Log-rank test
-- Logistic regression
+- Kaplan-Meier survival curves  
+- Log-rank test  
+- Logistic regression  
+- Random forest classification  
 
-## Results
-- Probability of remaining active declines sharply after ~20–25 years  
-- Log-rank test shows significant differences between aircraft models (p < 0.05)  
-- Logistic regression confirms age is a strong predictor of aircraft retirement
+## Model Performance
+- Logistic Regression AUC: ~0.90+  
+- Random Forest AUC: ~0.95  
+- Strong ability to distinguish active vs retired aircraft  
+
+## Key Findings
+- Aircraft are much less likely to remain active after ~20–25 years  
+- Significant differences exist across aircraft models (log-rank test, p < 0.05)  
+- Aircraft age is the strongest predictor of retirement  
+- Airline and model contribute secondary effects  
 
 ## Visualization
 
 ### Logistic Regression
-![Logistic](figures/logistic_age_probability.png)
+![Logistic Regression](figures/logistic_age_probability.png)
 
 ### Model Comparison
-![Model](figures/model_comparison1.png)
-![Model](figures/model_comparison2.png)
-![Model](figures/model_comparison3.png)
-![Model](figures/model_comparison4.png)
+![Model Comparison 1](figures/model_comparison1.png)
+![Model Comparison 2](figures/model_comparison2.png)
+![Model Comparison 3](figures/model_comparison3.png)
+![Model Comparison 4](figures/model_comparison4.png)
 
 ### ROC Curve
-![ROC](figures/random_forest_roc.png)
+![ROC Curve](figures/random_forest_roc.png)
 
 ### Feature Importance
-![Feature](figures/random_forest_feature_importance.png)
+![Feature Importance](figures/random_forest_feature_importance.png)
 
 ### Retirement Age Comparison
-![Retirement](figures/retirement_age_legacy_vs_lcc.png)
+![Retirement Comparison](figures/retirement_age_legacy_vs_lcc.png)
 
+## Project Structure
 
-## Files
-- Plane.ipynb: main analysis notebook  
-- Plane Research Report.pdf: full report  
+Plane-Research/
+├── figures/ # Visualization outputs
+├── Plane.ipynb # Main analysis notebook
+├── aircraft_data.csv # Dataset
+├── Plane Research Report.pdf # Full report
+└── README.md
+
 
 ## Author
 Kaitao Liao
