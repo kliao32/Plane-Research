@@ -23,6 +23,9 @@ aircraft_data.csv
 
 ### Model Comparison
 ![Model](figures/model_comparison1.png)
+![Model](figures/model_comparison2.png)
+![Model](figures/model_comparison3.png)
+![Model](figures/model_comparison4.png)
 
 ### ROC Curve
 ![ROC](figures/random_forest_roc.png)
